@@ -30,4 +30,12 @@ Want to bring Sweet Bliss Bakery to life on your machine? Here’s how to set it
 - **Clone the Repository:**
 [git clone](https://github.com/arinnwjyyy/sweet-bliss-bakery.git)
 
+## Project Structure
+sweet-bliss-bakery/
+├── images/               # Placeholder images for hero, about, and menu
+├── index.html            # Main HTML file
+├── styles.css            # Stylesheet for design and layout
+├── script.js             # JavaScript for mobile menu toggle
+└── README.md             # This file
+
 
