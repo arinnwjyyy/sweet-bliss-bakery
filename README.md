@@ -17,5 +17,13 @@ The Sweet Bliss Bakery website is a responsive, user-friendly single-page applic
 - **HTML5**: For semantic, accessible structure.
 - **CSS3**: For styling, with custom fonts (Lora and Nanum Pen Script) and media queries for responsiveness.
 - **JavaScript**: For the mobile menu toggle functionality.
-- **Fonts**: Google Fonts (Lora for body text, Nanum Pen Script for headings) to evoke warmth and personality.
+- **Fonts**: Google Fonts (*Lora* for body text, *Nanum Pen Script* for headings) to evoke warmth and personality.
 - **Images**: Placeholder images for the hero, about, and menu sections. ![Sweet Bliss Hero Section](images/)
+
+## Getting Started
+Want to bring Sweet Bliss Bakery to life on your machine? Here’s how to set it up:
+# Prerequisites
+- A modern web browser like Chrome.
+- A code editor like VS Code (optional, for tweaking the code).
+- A local server: I can use extensions like Live Server in VS Code.
+# Installation
