@@ -59,6 +59,4 @@ A big thank you to:
 - The open-source community for endless inspiration.
 - You, for visiting this project and believing in the magic of small, heartfelt moments.
 
-
-
-Made with love and a sprinkle of sugar for everyone who cherishes a warm pastry and a good story.
+> Made with love and a sprinkle of sugar for everyone who cherishes a warm pastry and a good story.
