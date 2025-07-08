@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweet Bliss Bakery</title>
+    
+    <!--link style css-->
+    <link rel="stylesheet" href="style/styles.css">
+
+    <!--link javaScript-->
+    <script src="script.js" defer></script> <!--'defer' digunakan agar DOM di muat-->
+
+    <!--Google Fonts for Logo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <!--Google Fonts for body-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sweet Bliss Bakery</div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https:/skilvul.com" id="link">Learn More</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-section">
+            <h1>Welcome to Sweet Bliss Bakery</h1>
+            <p id="description">A cozy spot where warm pastries, delightful coffee, and heartfelt moments create memories.
+            Join us for a sweet escape!</p>
+            <a href="#contact" class="cta-button">Visit us today</a>
+        </div>
+    </header>
+
+    <main>
+        <article id="container">
+            <section id="about">
+                <h2>Our Story</h2>
+                <p>At Sweet Bliss Bakery-every pastry tells a story. From our grandma's secret cookie recipe to our baristas' warm smiles, 
+                we're here to make your day a little sweeter. Our cozy cafe is your sweet bliss for laughter, chit-chats, and comforting aroma
+                of freshly baked goods.</p>
+            </section>
+
+            <section class="box-area">
+                <div class="box">
+                    <img src="images/our-story1.jpeg" alt="Cozy bakery interior">
+                    <div class="overlay">
+                        <h3>Cozy Interior</h3>
+                        <p>Hey, come on into Sweet Bliss Bakery - our soft lights and comfy seats feel like a warm hug.
+                            it's a cozy little escape where rustic vibes and friendly chatter make you feel right at home.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="images/freshly-baked-cookies.jpeg" alt="Freshly baked cookies">
+                    <div class="overlay">
+                        <h3>Fresh Baked</h3>
+                        <p>Smell that? It's the fresh-baked goodness at Sweet Bliss Bakery! From Grandma's secret cookie recipe, every bite's made with love—just for you, straight from the oven.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="images/sweet-bliss-laughter.jpg" alt="Friends laughing over coffee">
+                    <div class="overlay">
+                        <h3>Place to Share Memories</h3>
+                        <p>Let's make memories together at Sweet Bliss Bakery! Whether it's a laugh with friends or a deep chat over coffee, 
+                            this welcoming spot is where your heart's stories find a sweet home.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <article id="fav-menu">
+            <section id="menu">
+                <h2>Our Delights</h2>
+                <p>Come treat yourself to our handcrafted cakes, flaky croissants, and artisan coffee — each one made with so much love-just for you. 
+                    We serve it up with a warm heart and hoping to make your day a little sweeter!</p>
+            </section>
+
+            <section class="list-menu">
+                <div class="menu-items">
+                    <img src="images/our-delights.jpeg" alt="a cute cake">
+                </div>
+
+                <div class="menu-items">
+                    <img src="images/our-delights1.jpeg" alt="Redvelvet cake with strowberry cream">
+                </div>
+
+                <div class="menu-items">
+                    <img src="images/our-delights2.jpeg" alt="A chocolate cake flavor with melt choco">
+                </div>
+
+                <div class="menu-items">
+                    <img src="images/our-delights3.jpeg" alt="The Bunnies cookies">
+                </div>
+            </section>
+            <a href="#contact" class="cta-button">Explore our Menu</a>
+        </article>
+
+        <article>
+            <h2 class="title">Join Our Sweet Community</h2>
+            <p class="title-desc">Want to stay updated on our latest treats and events? Fill out the form below to become part of the Sweet Bliss Bakery family!</p>
+            
+            <section id="contact">
+                <form id="subscription-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="text" id="city" placeholder="Your City" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="number" id="zip-code" placeholder="zip-code" required>
+                    <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+                    <input type="checkbox" id="status">
+                    <button type="submit" id="submit-form">Submit</button>
+                    <div id="warning"></div>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Sweet Bliss Bakery & Cafe | 123 Sweet Popcorn Street, South Jakarta | Open Daily 9AM - 22PM</p>
+        <div class="social-media">
+            <a href="" target="_blank" class="social-icon">
+                <img src="https://img.icons8.com/ios-filled/50/FF8A80/instagram-new.png" alt="Instagram">
+            </a>
+
+            <a href="" target="_blank" class="social-icon">
+                <img src="https://img.icons8.com/ios-filled/50/FF8A80/twitter.png" alt="Twitter">
+            </a>
+        </div>
+        <p>© 2025 Sweet Bliss Bakery - Made with love.</p>
+    </footer>
+</body>
+</html>
