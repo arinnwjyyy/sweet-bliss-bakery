@@ -22,8 +22,13 @@ The Sweet Bliss Bakery website is a responsive, user-friendly single-page applic
 
 ## Getting Started
 Want to bring Sweet Bliss Bakery to life on your machine? Here’s how to set it up:
-# Prerequisites
+### Prerequisites
 - A modern web browser like Chrome.
 - A code editor like VS Code (optional, for tweaking the code).
 - A local server: I can use extensions like Live Server in VS Code.
-# Installation
+### Installation
+1. Clone the Repository:
+2. Navigate to the Project Folder:
+3. Open the Project:
+4. Explore and Customize:
+
