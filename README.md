@@ -16,3 +16,9 @@ The Sweet Bliss Bakery website is a responsive, user-friendly single-page applic
 - **Subscription Form**: A simple form for visitors to join the bakery’s community, styled with a soft, semi-transparent background.
 - **Footer**: Includes social media icons and contact info, keeping the cozy vibe consistent.
 
+## Technologies Used
+- HTML5: For semantic, accessible structure.
+- CSS3: For styling, with custom fonts (Lora and Nanum Pen Script) and media queries for responsiveness.
+- JavaScript: For the mobile menu toggle functionality.
+- Fonts: Google Fonts (Lora for body text, Nanum Pen Script for headings) to evoke warmth and personality.
+- Images: Placeholder images for the hero, about, and menu sections (replace with real bakery images for production).
