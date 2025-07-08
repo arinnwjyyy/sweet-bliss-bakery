@@ -18,4 +18,4 @@ The Sweet Bliss Bakery website is a responsive, user-friendly single-page applic
 - **CSS3**: For styling, with custom fonts (Lora and Nanum Pen Script) and media queries for responsiveness.
 - **JavaScript**: For the mobile menu toggle functionality.
 - **Fonts**: Google Fonts (Lora for body text, Nanum Pen Script for headings) to evoke warmth and personality.
-- **Images**: Placeholder images for the hero, about, and menu sections. ![Sweet Bliss Hero Section](images/hero-screenshot.png)
+- **Images**: Placeholder images for the hero, about, and menu sections. ![Sweet Bliss Hero Section](images/)
