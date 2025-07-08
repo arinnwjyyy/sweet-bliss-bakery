@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff5f0;
+    color: #5c4033;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /*line-height: 1.5;*/
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #ffd1dc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #d81b60;
+    font-family: "Nanum Pen Script", cursive;
+    font-style: normal;
+}
+
+nav ul {
+    font-size: 1.1rem;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5c4033;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #d81b60;
+}
+
+/*Humberger menu*/
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #5c4033;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #ffe4e1;
+    background-image: url("../images/background-header1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section h1 {
+    padding-top: 11rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: rgb(31, 7, 7);
+    font-family: "Nanum Pen Script", cursive;
+    font-style: normal;
+}
+
+#description {
+    color: #22201e;
+    font-size: 1.1rem;
+    font-weight:lighter;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    background-color: rgba(255, 255, 255, 0.623); /* Latar belakang semi-transparan */
+    padding: 0.5rem; /* Memberi ruang di sekitar teks */
+    border-radius: 5px; /* Sudut melengkung untuk estetika */
+    display: inline-block; /* Membuat latar hanya menutupi teks */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff8b80;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #d81b60;
+}
+
+/*Main container*/
+#container {
+    width: 90%;
+    min-height: 50vh;
+    background-color: #fff5f0;
+    margin: 5px auto;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5c4033;
+    padding-bottom: 3px;
+    font-family: "Nanum Pen Script", cursive;
+    font-style: normal;
+}
+
+#about p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.box-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    gap: 15px;
+    padding: 15px;
+    flex-wrap: wrap; /*membuat elemen menumpuk di layar kecil*/
+}
+
+.box {
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 9px #ff8a80;
+    max-width: 300px; /*batas maksimum lebar box*/
+    width: 100%; /*mengisi lebar penuh di layar kecil*/
+}
+
+.box img {
+    width: 100%;
+    border-radius: 1px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.overlay {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(transparent, #ff8a80 75%);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px; /*kurangi padding dilayar kecil*/
+    text-align: center;
+    font-size: 1.5rem;  /*ukuran font lebih kecil*/
+    transition: height 0.5s;
+}
+
+.overlay h3 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-size: 1.2rem; /*ukuran font lebih kecil*/
+    letter-spacing: 2px;
+    font-family: "Nanum Pen Script", cursive;
+    font-style: normal;
+}
+
+.overlay p {
+    padding-bottom: 30px; /*kurangi padding di layar kecil*/
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.box:hover .overlay {
+    height: 100%;
+}
+
+/*Main fav-menu*/
+#fav-menu {
+    width: 100%;
+    margin: 20px auto;
+}
+
+#menu h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5c4033;
+    padding-bottom: 5px;
+    font-family: "Nanum Pen Script", cursive;
+    font-style: normal;
+}
+
+#menu p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    position: relative;
+    border: 2px solid #ffd1dc;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: #ffe4e1;
+    max-width: 100%;
+}
+
+.menu-items img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-items img:hover {
+    transform: scale(1.1);
+}
+
+.cta-button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #FF8A80;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    width: fit-content; /* Opsional, untuk membatasi lebar sesuai konten */
+}
+
+/*Join Our Sweet Community*/
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5c4033;
+    padding-bottom: 5px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: "Nanum Pen Script", cursive;
+    font-style: normal;
+}
+
+.title-desc {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #22201e;
+    font-weight: 400;
+}
+
+#contact {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url("../images/background-header2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 70vh;
+    margin-bottom: 30px;
+}
+
+#contact::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.075);
+   z-index: 1;
+}
+
+#subscription-form {
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.658);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#subscription-form input,
+#subscription-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ffd1dc;
+    border-radius: 5px;
+}
+
+#subscription-form button {
+    background-color: #ff8a80;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#subscription-form button:hover {
+    background-color: #d81b60;
+}
+
+#warning {
+    color: #D81B60;
+    font-size: 0.9rem;
+}
+
+#check {
+    font-size: 0.9rem;
+    color: #5c4033;
+}
+
+/*Footer*/
+footer {
+    background-color: #ffd1dc;
+    color: #5c4033;
+    text-align: center;
+    padding:1.5rem 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    font-family: "Nanum Pen Script", cursive;
+    font-style: normal;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2);
+}
+
+/*media queries*/
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .hero-section h1 {
+        padding-top: 5rem;
+        font-size: 2rem;
+    }
+
+    #description {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    #container {
+        padding-top: 50px;
+    }
+
+    #about h2, #menu h2, .title {
+        font-size: 2rem;
+    }
+
+    #about p, #menu p, .title-desc {
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .box-area {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+
+    .overlay {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+
+    .overlay h3 {
+        font-size: 1rem;
+    }
+
+    .overlay p {
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+
+    .menu-items {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #subscription-form {
+        max-width: 90%;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #ffd1dc;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+        padding-top: 4rem;
+    }
+
+    #description {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1rem;
+    }
+
+    #about h2, #menu h2, .title {
+        font-size: 1.5rem;
+    }
+
+    #about p, #menu p, .title-desc {
+        font-size: 0.9rem;
+    }
+
+    .overlay {
+        font-size: 1rem;
+    }
+
+    .overlay h3 {
+        font-size: 0.9rem;
+    }
+
+    .overlay p {
+        font-size: 0.7rem;
+        padding-bottom: 15px;
+    }
+}
